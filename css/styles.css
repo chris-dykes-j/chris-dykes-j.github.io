@@ -1,0 +1,163 @@
+/* Using Nord theme colours: https://www.nordtheme.com/ && Google fonts: https://fonts.googleapis.com */
+
+body {
+    --common-radius: 10px;
+    --miku: #8FBCBB;
+    --text: #E5E9F0;
+    --background: #242933;
+    --container-colour: #2E3440;
+}
+
+body.light-theme {
+    --common-radius: 10px;
+    --miku: #8FBCBB;
+    --text: #242933;
+    --background: #E5E9F0;
+    --container-colour: #ECEFF4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all .6s;
+}
+
+html, body {
+    color: var(--text);
+    background-color: var(--background);
+    font-family: "Fira Code", sans-serif;
+}
+
+/* Menu */
+
+#menu {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    font-size: 20px;
+    background-color: #242933;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    font-family: "Play", sans-serif;
+}
+
+#menu li {
+    float: left;
+}
+
+#menu li a {
+    color: #E5E9F0;
+    display: block;
+    margin: 10px;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: var(--common-radius);
+}
+
+#menu li a:hover {
+    background-color: #4C566A;
+}
+
+/* Banner */
+
+#banner-container {
+    width: 100%;
+    height: 200px;
+    background-color: var(--miku);
+    display: grid;
+    grid-auto-flow: column;
+    padding-top: 50px;
+}
+
+#banner-title {
+    margin: auto 0 auto auto;
+    font-size: 65px;
+    color: #E5E9F0;
+    font-family: "Play", sans-serif;
+}
+
+#banner-image {
+    margin: auto auto auto 0;
+    transform: scale(0.75);
+}
+
+/* Formatting */
+
+.intro {
+    margin: auto;
+    width: 90%;
+    padding: 4% 0 2% 0;
+    text-align: center;
+    font-size: larger;
+}
+
+.content-container {
+    background-color: var(--container-colour);
+    width: 70%;
+    margin: auto;
+    border-radius: var(--common-radius);
+    padding: 30px;
+}
+
+#copyleft {
+    text-align: center;
+    color: var(--text);
+    padding: 40px;
+}
+
+/* Blog entry list */
+
+.blog-post * {
+    padding: 5px;
+    align-content: flex-start;
+    font-size: large;
+}
+
+.blog-post .title {
+    color: var(--miku);
+    display: inline-block;
+    text-decoration: none;
+    width: fit-content;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.blog-link {
+    color: var(--miku);
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-post a:hover {
+    color: var(--text);
+}
+
+.blog-post .spacing {
+    height: 40px;
+}
+
+/* Entries */
+
+#page-title {
+    padding: 10px 0 20px 0;
+    color: var(--miku);
+}
+
+.page-description {
+    padding-bottom: 10px;
+}
+
+#page-content {
+    margin: 2.5% auto;
+    width: 85%;
+    justify-content: center;
+    white-space: pre-line;
+    font-size: large;
+}
+
+.entry-image {
+    display: block;
+    margin: 20px auto;
+}
