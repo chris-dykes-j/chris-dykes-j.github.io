@@ -30,18 +30,26 @@
 
 <div class="intro">
     <h1 id="page-title">
-        Why PHP sucks
+        First Blog Entry
     </h1>
     <p class="page-description">
-        PHP is terrible and other mean things to say.
+        How I made this website
     </p>
     <p class="page-description">
-        2023-03-10 04:00 PM
+        2023-03-12 11:00 AM
     </p>
 </div>
 
 <div class="content-container">
-    <p id="page-content">Php is really bad because I personally don't like it.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fermentum purus at odio venenatis dapibus. Sed congue odio at neque tempor, nec placerat ante suscipit. Etiam laoreet tortor ut magna tempus interdum. Pellentesque quis imperdiet quam, non imperdiet neque. Aenean maximus tellus sed posuere pretium. Aenean semper nec nisl eu ullamcorper.Integer accumsan, ante ut faucibus porttitor, tortor lacus vestibulum massa, ut vehicula tortor dolor ultricies erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris commodo, sem quis accumsan cursus, est libero bibendum eros, id ultricies diam sem eget sem. Ut nec ornare mauris, a blandit libero. Duis non euismod urna. Curabitur pellentesque libero at elit convallis ornare.<img src='images/logo.png' class='entry-image' alt="test-image">Php is really bad because I personally don't like it. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fermentum purus at odio venenatis dapibus. Sed congue odio at neque tempor, nec placerat ante suscipit. Etiam laoreet tortor ut magna tempus interdum. Pellentesque quis imperdiet quam, non imperdiet neque. Aenean maximus tellus sed posuere pretium. Aenean semper nec nisl eu ullamcorper.Integer accumsan, ante ut faucibus porttitor, tortor lacus vestibulum massa, ut vehicula tortor dolor ultricies erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris commodo, sem quis accumsan cursus, est libero bibendum eros, id ultricies diam sem eget sem. Ut nec ornare mauris, a blandit libero. Duis non euismod urna. Curabitur pellentesque libero at elit convallis ornare.</p>
+    <p id="page-content">
+Hello, and welcome to my blog! I've been wanting to put this website online for a while now, but only recently figured out a suitable way to do so. This website was created with ASP.NET Core, and implements an MVC pattern. I've been using C# and the .NET Core framework since September, as that is those are the tools I use at work. I really liked the templating from razor pages, and decided to finally create this blog using the aforementioned tools. There was just one problem with using C#, .NET Core, and razor pages; it requires a live server to run the website, and I did not have the patience to fuss with Azure or AWS, nor did I want to spend any money on such a small project (at least not at it's current scale). I tried using a tool I found online to generate the pages statically, but there were issues with compatibility with my operating system, and the tool ended up deleting an entire directory of projects (thankfully I back up my work). 
+
+Not really knowing what to do, and feeling less motivated, I put this project on the shelf to focus on other things. Last week, I was working on scraping text and images from a website for a larger project. I realized a couple of days ago that I could easily scrape the blog as it was running on my computer, and save the html files to another directory. The solution is a bit janky, but it gave me a very simple static site generator. <a href="https://github.com/chris-dykes-j/dev-blog/blob/main/StaticSiteGenerator/Program.cs">It was surprisingly easy to program.</a>
+
+I'll need to revisit this project, and fix some compatibility issues. The support to alternate between Light Mode and Dark Mode is buggy right now. I was using FireFox when building the website, but recently noticed that chromium based browsers don't handle the transition the same way that FireFox does. I'll fix that at some point... when I have the urge, lol. The SSG I made for the site needs a bit more work as well, but as with the CSS issues, I'll fuss with it when motivation comes back. For now, I'd like to get started on an experimental web assembly project and revisit my goals for a separate project.
+
+Thank you for reading!
+</p>
 </div>
 
 <footer>
